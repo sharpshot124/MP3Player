@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fdb24e26-73fe-49be-83c0-73b7d5d33b1b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>MP3Player.py</StartupFile>
+    <StartupFile>GUI.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MP3Player.py" />
+    <Compile Include="MP3Player.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GUI.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
