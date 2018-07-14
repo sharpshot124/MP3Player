@@ -1,20 +1,6 @@
 from tkinter import *
 
-class GUI:
-
-    __root = None
-
-    def __init__(self, **kwargs):
-        __root = Tk()
-        mainloop()
-
-    def getRoot():
-        return __root
-
-    def Update():
-        mainloop()
-
-class Window(Tk):
+class GUIElement(Tk):
 
     __owner = None
     __width = 300
@@ -27,3 +13,15 @@ class Window(Tk):
     def setWidth(width):
         __width = width
 
+class GUI:
+
+    __root = None
+
+    def __init__(self, **kwargs):
+        __root = Tk()
+
+    def getRoot():
+        return __root
+
+    def Update():
+        mainloop()
